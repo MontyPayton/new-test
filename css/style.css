@@ -1,7 +1,138 @@
-h1 {
-  color: aqua;
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
 }
 
 body {
-  background: burlywood;
+  margin: 0;
+  padding: 0;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+  font-weight: 500;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #C4C4C4;
+}
+
+h1 {
+  font-size: 64px;
+  line-height: 95px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  max-width: 734px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 36px;
+  line-height: 53px;
+  text-transform: uppercase;
+  color: #000;
+}
+
+h3 {
+  font-size: 24px;
+  line-height: 36px;
+  color: #C4C4C4;
+}
+
+h4 {
+  font-size: 21px;
+  line-height: 31px;
+  letter-spacing: 0.02em;
+  color: #000;
+}
+
+header {
+  min-height: 740px;
+  background-image: url(../img/header-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+.container div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding-top: 20px;
+  margin-bottom: 112px;
+}
+.container div button {
+  cursor: pointer;
+  background-color: #F7654A;
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50px;
+  height: 50px;
+}
+.container div button span {
+  display: block;
+  width: 21px;
+  height: 3px;
+  background-color: #FFFFFF;
+  margin-bottom: 4px;
+}
+.container div button span:last-child {
+  margin-bottom: 0;
+}
+.container h4 {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  max-width: 734px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 35px;
 }
